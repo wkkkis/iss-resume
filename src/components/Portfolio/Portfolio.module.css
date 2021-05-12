@@ -1,0 +1,106 @@
+.mainPortfolio{
+    padding: 40px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.portfolio{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.portfolio span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio span:after{
+    content: '.';
+    color: #3333ff;
+}
+
+.allProject{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    margin-top: 2%;
+    grid-gap: 1%;
+}
+
+.project{
+    text-align: center;
+    border: 1px solid #dedede;
+}
+
+.imgBlock{
+    max-height: 321px;
+    height: 100%;
+    background: #333333;
+}
+
+.imgBlock img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgBlock span{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -60px;
+}
+
+.imgBlock span:after{
+    content: none;
+}
+
+.aboutIs{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutIs span{
+    font-size: 20px;
+}
+
+.aboutIs span:after{
+    content: none;
+}
+
+.paragraph{
+    margin-top: 10px;
+}
+
+.paragraph p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin-left: 10%;
+    grid-gap: 10%;
+}
+
+.btn button{
+    cursor: pointer;
+    padding: 10px 5px 10px 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: #3333ff;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+}
+
+.btn button:hover{
+    box-shadow: 0 0 16px 8px #c8c8c8;
+}

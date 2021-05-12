@@ -1,0 +1,92 @@
+.form button{
+    padding: 20px 15px 20px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+    background: #3333ff;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+}
+
+.form button:hover{
+    box-shadow: 0 0 16px 8px #c8c8c8;
+}
+
+.columns1 span:after{
+    content: none;
+}
+
+.form span{
+    font-size: 13px;
+    color: red;
+    margin-left: 1%;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.form input{
+    border: 1px solid #e3e3e3;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 50px;
+    width: 80%;
+    border-radius: 2px;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+    outline:none;
+    color: #252525;
+}
+
+.form input:focus{
+    border: 1px solid #3333ff;
+}
+
+.form textarea{
+    border: 1px solid #e3e3e3;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 120px;
+    width: 95%;
+    border-radius: 2px;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+    outline:none;
+    color: #252525;
+}
+
+.form textarea:focus{
+    border: 1px solid #3333ff;
+}
+
+.formBlock{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.columns1{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.form button{
+    float: right;
+    margin-right: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000000;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

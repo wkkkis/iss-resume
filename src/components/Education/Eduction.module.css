@@ -1,0 +1,50 @@
+.mainEducation{
+    padding: 40px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.education{
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+.educationAbout span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.educationAbout span:after{
+    content: '.';
+    color: #3333ff;
+}
+
+.aboutCollage span{
+    font-size: 17px;
+    font-weight: 700;
+    color: #252525;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutCollage span:after{
+    content: '.';
+    color: #3333ff;
+}
+
+.nav-is-fixed{
+    position: fixed;
+}
+
+.paragraph p{
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.design{
+    margin-top: 40px;
+}
