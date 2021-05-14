@@ -51,21 +51,21 @@ export default function AboutMe() {
                                         СОЦ СЕТИ
                                     </span>
                             <div className={s.social}>
-                                <div className={s.facebook}>
-                                    <img src={facebook} alt=""/>
-                                </div>
-                                <div className={s.github}>
-                                    <img src={instagram} alt=""/>
-                                </div>
-                                <div className={s.instagram}>
-                                    <img src={whatsapp} alt=""/>
-                                </div>
-                                <div className={s.telegram}>
-                                    <img src={telegram} alt=""/>
-                                </div>
-                                <div className={s.whatsapp}>
-                                    <img src={github} alt=""/>
-                                </div>
+                                <a href="https://github.com/wkkkis">
+                                    <img className={s.github} src={github} alt=""/>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=100026994910022">
+                                    <img className={s.facebook} src={facebook} alt=""/>
+                                </a>
+                                <a href="https://www.instagram.com/layryc/">
+                                    <img className={s.instagram} src={instagram} alt=""/>
+                                </a>
+                                <a href="https://t.me/hagelu">
+                                    <img className={s.telegram} src={telegram} alt=""/>
+                                </a>
+                                <a href="https://wa.me/+996500100805">
+                                    <img className={s.whatsapp} src={whatsapp} alt=""/>
+                                </a>
                             </div>
                         </div>
                     </div>

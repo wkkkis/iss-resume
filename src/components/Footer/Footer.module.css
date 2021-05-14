@@ -69,6 +69,7 @@
 .socialNetwork .block{
     display: flex;
     justify-content: center;
+    margin-left: -5%;
 }
 
 
@@ -97,6 +98,20 @@
     }
     .contactsFooter{
         margin-top: 10px;
+    }
+    .footer span{
+        display: flex;
+        justify-content: center;
+    }
+    .paragraph p{
+        text-align: center;
+    }
+    .design{
+        display: grid;
+        justify-content: center;
+    }
+    .contactsFooter{
+        margin-top: 15px;
     }
 }
 

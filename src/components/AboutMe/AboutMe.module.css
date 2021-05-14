@@ -230,11 +230,13 @@
         text-align: center;
     }
     .social{
+        margin-top: 10px;
         justify-content: center;
         display: flex;
         margin-left: -10%;
     }
     .social img{
         margin-left: 20px;
+        width: 30px;
     }
 }
