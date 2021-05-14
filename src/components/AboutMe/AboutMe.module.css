@@ -1,50 +1,50 @@
-.mainAboutMe{
+.mainAboutMe {
     margin-top: 80px;
     padding: 40px;
     border-bottom: 1px solid #e3e3e3;
     color: #252525;
 }
 
-.aboutMe{
+.aboutMe {
     width: 70%;
     margin-left: 15%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.about{
+.about {
     width: 90%;
 }
 
-.fullName{
+.fullName {
     font-size: 36px;
     line-height: 1.25;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
 
-.fullName span{
+.fullName span {
     font-family: 'Montserrat', sans-serif;
 }
 
-.fullName span:after{
+.fullName span:after {
     content: '.';
     color: #3333ff;
 }
 
-.paragraph p{
+.paragraph p {
     line-height: 1.6;
     color: #333;
     font-family: 'Montserrat', sans-serif;
 }
 
-.photo{
+.photo {
     position: relative;
     padding-bottom: 56.2%;
     float: right;
 }
 
-.photo img{
+.photo img {
     position: absolute;
     -o-object-fit: cover;
     object-fit: cover;
@@ -52,25 +52,25 @@
     height: 100%;
 }
 
-.contacts{
+.contacts {
     width: 80%;
     margin-top: 5%;
 }
 
-.phone{
+.phone {
     display: grid;
     margin-top: 10px;
     grid-template-columns: 25% 70%;
 }
 
-.phone span{
+.phone span {
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #252525;
 }
 
-.phone p{
+.phone p {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.4;
     color: #333;
@@ -78,7 +78,13 @@
     margin-top: 0;
 }
 
-.buttons button{
+.buttons {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+}
+
+.buttons button {
     cursor: pointer;
     padding: 20px 15px 20px 15px;
     font-family: 'Montserrat', sans-serif;
@@ -91,11 +97,11 @@
     transition: all 0.5s ease;
 }
 
-.buttons button:hover{
+.buttons button:hover {
     box-shadow: 0 0 16px 8px #c8c8c8;
 }
 
-.phone img{
+.phone img {
     width: 18px;
     float: left;
     margin-right: 5%;
@@ -103,6 +109,132 @@
     transition: all 0.5s ease;
 }
 
-.phone img:hover{
+.phone img:hover {
     box-shadow: 0 0 8px 4px #c8c8c8;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutMe {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutMe {
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: 100%;
+    }
+
+    .mainAboutMe {
+        padding: 20px;
+    }
+
+    .fullName span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragraph {
+        margin-top: 10px;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .photo {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .aboutMe {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .phone {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .aboutMe {
+        grid-template-columns: 100%;
+    }
+
+    .mainAboutMe {
+        padding: 2.5%;
+    }
+
+    .fullName {
+        margin-top: 10px;
+    }
+
+    .fullName span {
+        font-size: 25px;
+    }
+
+    .paragraph {
+        margin-top: 10px;
+    }
+
+    .about {
+        width: 100%;
+        float: left;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    .phone {
+        width: 100%;
+        display: grid;
+    }
+
+    .photo {
+        margin-top: 10px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fullName span:after {
+        content: none;
+    }
+    .fullName span {
+        font-size: 20px;
+    }
+    .paragraph p{
+        text-align: center;
+    }
+    .contacts{
+        display: grid;
+        justify-content: center;
+    }
+    .phone span{
+        text-align: center;
+    }
+    .phone p{
+        text-align: center;
+    }
+    .social{
+        justify-content: center;
+        display: flex;
+        margin-left: -10%;
+    }
+    .social img{
+        margin-left: 20px;
+    }
 }

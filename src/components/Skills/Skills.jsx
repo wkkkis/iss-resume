@@ -19,20 +19,22 @@ export default function Skills() {
                         <img src={design} alt="" width="100px"/>
                     </div>
                 </div>
-                <div className={s.web}>
-                    <span>Web Development</span>
-                    <div className={s.paragraph}>
-                        <p>
-                            Javascript, Node.js, React.js, Redux, REST API, Thunk, Styled Components, CSS modules, Axios
-                        </p>
+                <div className={s.languagesSkills}>
+                    <div className={s.web}>
+                        <span>Web Development</span>
+                        <div className={s.paragraph}>
+                            <p>
+                                Javascript, Node.js, React.js, Redux, REST API, Thunk, Styled Components, CSS modules, Axios
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className={s.front}>
-                    <span>Frontend Development</span>
-                    <div className={s.paragraph}>
-                        <p>
-                            HTML, CSS, SASS, Bootstrap
-                        </p>
+                    <div className={s.front}>
+                        <span>Frontend Development</span>
+                        <div className={s.paragraph}>
+                            <p>
+                                HTML, CSS, SASS, Bootstrap
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

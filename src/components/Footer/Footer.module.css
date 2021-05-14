@@ -58,9 +58,62 @@
 .socialNetwork img{
     width: 30px;
     margin-left: 20px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.socialNetwork img:hover {
+    box-shadow: 0 0 8px 4px #c8c8c8;
 }
 
 .socialNetwork .block{
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 1500px){
+    .footer{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: 100%;
+    }
+    .paragraph{
+        margin-top: 10px;
+    }
+    .contactsFooter{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: 100%;
+    }
+    .paragraph{
+        margin-top: 10px;
+    }
+    .contactsFooter{
+        margin-top: 20px;
+    }
+    .design{
+        display: grid;
+        justify-content: center;
+    }
 }

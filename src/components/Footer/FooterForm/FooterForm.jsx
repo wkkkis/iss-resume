@@ -12,16 +12,16 @@ export default function FooterForm() {
                 <div className={s.columns1}>
                     <div>
                         <span>{errors.name?.type === 'required' && "Name is required"}</span>
-                        <input placeholder="имя" {...register("name", { required: true })} />
+                        <textarea placeholder="имя" {...register("name", { required: true })} />
                     </div>
 
                     <div>
                         <span>{errors.email && "Email is required"}</span>
-                        <input placeholder="почта" {...register("email", { required: true })} />
+                        <textarea placeholder="почта" {...register("email", { required: true })} />
                     </div>
                 </div>
 
-                <div className={s.columns1}>
+                <div className={s.columns2}>
                     <div>
                         <span>{errors.messages && "Messages is required"}</span>
                         <textarea placeholder="сообщение" {...register("messages", { required: true })} />

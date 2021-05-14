@@ -1,87 +1,87 @@
-.mainPortfolio{
+.mainPortfolio {
     padding: 40px;
     border-bottom: 1px solid #e3e3e3;
 }
 
-.portfolio{
+.portfolio {
     width: 70%;
     margin-left: 15%;
 }
 
-.portfolio span{
+.portfolio span {
     font-size: 24px;
     font-weight: 700;
     color: #252525;
     font-family: 'Montserrat', sans-serif;
 }
 
-.portfolio span:after{
+.portfolio span:after {
     content: '.';
     color: #3333ff;
 }
 
-.allProject{
+.allProject {
     display: grid;
     grid-template-columns: 32% 32% 32%;
+    justify-content: center;
     margin-top: 2%;
-    grid-gap: 1%;
+    grid-gap: 2%;
+    max-width: 100%;
 }
 
-.project{
+.project {
+    width: 323px;
     text-align: center;
     border: 1px solid #dedede;
 }
 
-.imgBlock{
-    max-height: 321px;
-    height: 100%;
+.imgBlock {
+    height: 320px;
     background: #333333;
 }
 
-.imgBlock img{
+.imgBlock img {
     width: 321px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.imgBlock span{
+.imgBlock span {
     color: white;
     font-size: 40px;
-    position: absolute;
-    margin-top: 130px;
-    margin-left: -60px;
+    text-align: center;
 }
 
-.imgBlock span:after{
+.imgBlock span:after {
     content: none;
 }
 
-.aboutIs{
+.aboutIs {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.aboutIs span{
+.aboutIs span {
     font-size: 20px;
 }
 
-.aboutIs span:after{
+.aboutIs span:after {
     content: none;
 }
 
-.paragraph{
+.paragraph {
     margin-top: 10px;
 }
 
-.paragraph p{
+.paragraph p {
     font-size: 15px;
     line-height: 1.6;
     color: #333;
     font-family: 'Montserrat', sans-serif;
 }
 
-.btn{
+.btn {
     margin-top: 10px;
     display: grid;
     grid-template-columns: 40% 40%;
@@ -89,7 +89,7 @@
     grid-gap: 10%;
 }
 
-.btn button{
+.btn button {
     cursor: pointer;
     padding: 10px 5px 10px 5px;
     font-family: 'Montserrat', sans-serif;
@@ -101,6 +101,65 @@
     transition: all 0.5s ease;
 }
 
-.btn button:hover{
+.btn button:hover {
     box-shadow: 0 0 16px 8px #c8c8c8;
+}
+
+@media screen and (max-width: 1500px) {
+    .portfolio {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .allProject{
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .allProject {
+        grid-template-columns: 100%;
+        margin: 15px auto;
+    }
+
+    .project {
+        margin: 0 auto;
+        width: 646px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .portfolio{
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .portfolio span{
+        display: flex;
+        justify-content: center;
+    }
+
+    .allProject {
+        margin-top: 10px;
+        grid-template-columns: 100%;
+    }
+
+    .project {
+        margin: 15px auto;
+        width: 323px;
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mainPortfolio{
+        padding: 0;
+    }
+
+    .allProject{
+        margin-top: -10px;
+    }
 }

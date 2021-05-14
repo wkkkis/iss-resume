@@ -29,7 +29,7 @@ export default function Footer(){
                             <img src={design} alt="" width="100px" />
                         </div>
                     </div>
-                    <div className="contactsFooter">
+                    <div className={s.contactsFooter}>
                         <FooterForm/>
                     </div>
                 </div>

@@ -1,9 +1,9 @@
-.mainEducation{
+.mainEducation {
     padding: 40px;
     border-bottom: 1px solid #e3e3e3;
 }
 
-.education{
+.education {
     width: 70%;
     margin-left: 15%;
     display: grid;
@@ -11,40 +11,105 @@
     grid-gap: 10px;
 }
 
-.educationAbout span{
+.educationAbout span {
     font-size: 24px;
     font-weight: 700;
     color: #252525;
     font-family: 'Montserrat', sans-serif;
 }
 
-.educationAbout span:after{
+.educationAbout span:after {
     content: '.';
     color: #3333ff;
 }
 
-.aboutCollage span{
+.aboutCollage span {
     font-size: 17px;
     font-weight: 700;
     color: #252525;
     font-family: 'Montserrat', sans-serif;
 }
 
-.aboutCollage span:after{
+.aboutCollage span:after {
     content: '.';
     color: #3333ff;
 }
 
-.nav-is-fixed{
+.nav-is-fixed {
     position: fixed;
 }
 
-.paragraph p{
+.paragraph p {
     line-height: 1.6;
     color: #333;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-.design{
+.design {
     margin-top: 40px;
+}
+
+@media screen and (max-width: 1500px){
+    .education{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .education {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .educationAbout {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .education {
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: 100%;
+    }
+
+    .languagesSkills span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .educationAbout {
+        width: 100%;
+    }
+
+    .educationAbout span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .design {
+        display: grid;
+        justify-content: center;
+    }
+
+    .paragraph p{
+        margin-top: 5px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .aboutCollage{
+        margin-top: 15px;
+    }
+
+    .aboutCollage span{
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutCollage span:after{
+        content: none;
+    }
 }
