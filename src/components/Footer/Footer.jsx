@@ -1,14 +1,19 @@
 import React from "react";
 import s from "./Footer.module.css"
-import FooterForm from "./FooterForm/FooterForm";
 import design from "../../assets/images/design.png";
 import facebook from "../../assets/images/facebook.png"
 import instagram from "../../assets/images/instagram.png"
 import telegram from "../../assets/images/telegram.png"
 import whatsapp from "../../assets/images/whatsapp.png"
 import github from "../../assets/images/github.png"
+import {compose} from "redux";
+import {connect} from "react-redux";
+import {getUserStatus, setCLoseCode} from "../../redux/messages-reducer";
+import FooterForm from "./FooterForm/FooterForm";
+import Overlay from "../common/Overlay";
 
-export default function Footer() {
+function Footer({getUserStatus, messagesCode, setCLoseCode}) {
+    const onSubmit =data=> getUserStatus(JSON.stringify(data, null, 5))
     return (
         <>
             <div id="contact" className={s.mainFooter}>
@@ -30,7 +35,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className={s.contactsFooter}>
-                        <FooterForm/>
+                        <FooterForm onSubmit={onSubmit}/>
                     </div>
                 </div>
             </div>
@@ -58,6 +63,19 @@ export default function Footer() {
                     Copyright 2021 ISS.
                 </span>
             </div>
+            <div>
+                <Overlay messagesCode={messagesCode} setCLoseCode={setCLoseCode}/>
+            </div>
         </>
     )
 }
+
+let mapStateToProps = state => ({
+    messagesCode: state.messagesPage.messagesCode
+})
+
+let FooterContainer = compose(
+    connect(mapStateToProps, {setCLoseCode, getUserStatus})
+)(Footer)
+
+export default FooterContainer

@@ -5,6 +5,8 @@ import instagram from "../../assets/images/instagram.png"
 import telegram from "../../assets/images/telegram.png"
 import whatsapp from "../../assets/images/whatsapp.png"
 import github from "../../assets/images/github.png"
+import cv from "../../assets/cv/cv.pdf"
+import {Link} from "react-scroll";
 
 export default function AboutMe() {
     return (
@@ -70,12 +72,17 @@ export default function AboutMe() {
                         </div>
                     </div>
                     <div className={s.buttons}>
-                        <button>
-                            ПОСМОТРЕТЬ РЕЗЮМЕ
-                        </button>
-                        <button>
-                            СВЯЗАТЬСЯ СО МНОЙ
-                        </button>
+                        <a href={cv}>
+                            <button>
+                                ПОСМОТРЕТЬ РЕЗЮМЕ
+                            </button>
+                        </a>
+                        <Link offset={-65} to="contact" spy={true} smooth={true}>
+                            <button>
+                                СВЯЗАТЬСЯ СО МНОЙ
+                            </button>
+                        </Link>
+
                     </div>
                 </div>
                 <div className={s.photo}>

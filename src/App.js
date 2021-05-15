@@ -5,7 +5,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Skills from "./components/Skills/Skills";
 import Education from "./components/Education/Education";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Footer from "./components/Footer/Footer";
+import FooterContainer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Skills/>
       <Education/>
       <Portfolio/>
-      <Footer/>
+      <FooterContainer/>
     </>
   );
 }
