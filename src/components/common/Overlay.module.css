@@ -54,7 +54,7 @@
 @media screen and (max-width: 400px) {
     .stylesBlock{
         width: 300px;
-        margin-top: 90%;
+        margin-top: 50%;
     }
     .stylesBlock button{
         padding: 15px 80px 15px 80px;
