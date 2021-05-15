@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import s from "./Header.module.css";
 import {Link} from 'react-scroll'
 
-export default function Header(){
+export default function Header() {
 
     const [state, setState] = useState(false)
 
@@ -21,23 +21,33 @@ export default function Header(){
                 </div>
                 <div className={s.mainMenu}>
                     <div className={state ? s.doAdaptive : s.menu}>
-                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-60} to="contact" spy={true} smooth={true}>СВЯЗАТЬСЯ</Link>
-                        <Link onClick={closeAdaptiveMenu}  activeClass={s.active} offset={-65} to="portfolio" spy={true} smooth={true}>ПОРТФОЛИО</Link>
-                        <Link onClick={closeAdaptiveMenu}  activeClass={s.active} offset={-65} to="education" spy={true} smooth={true}>ОБРАЗОВАНИЕ</Link>
-                        <Link onClick={closeAdaptiveMenu}  activeClass={s.active} offset={-65} to="skills" spy={true} smooth={true}>НАВЫКИ</Link>
-                        <Link onClick={closeAdaptiveMenu}  activeClass={s.active} offset={-65} to="about" spy={true} smooth={true}>ОБО МНЕ</Link>
+                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="contact" spy={true}
+                              smooth={true}>СВЯЗАТЬСЯ</Link>
+                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="portfolio" spy={true}
+                              smooth={true}>ПОРТФОЛИО</Link>
+                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="education" spy={true}
+                              smooth={true}>ОБРАЗОВАНИЕ</Link>
+                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="skills" spy={true}
+                              smooth={true}>НАВЫКИ</Link>
+                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="about" spy={true}
+                              smooth={true}>ОБО МНЕ</Link>
                     </div>
-                    <div onClick={activeAdaptiveMenu} className={s.burgerMenu}>
-                        <div>
+                    {!state ?
+                        <div onClick={activeAdaptiveMenu} className={s.burgerMenu}>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        : <div onClick={closeAdaptiveMenu} className={s.closeMenu}>
 
                         </div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
         </div>
