@@ -95,13 +95,14 @@
 }
 
 .closeMenu {
-    top: 26.5%;
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    position: absolute;
+    position: relative;
     z-index: 1;
     cursor: pointer;
+    float: right;
+    top: -5px
 }
 .closeMenu:before {
     content: '+';
@@ -112,7 +113,7 @@
     font-size: 50px;
     line-height: 1;
     top: -5px;
-    left: 6px;
+    left: 5px;
 }
 
 
