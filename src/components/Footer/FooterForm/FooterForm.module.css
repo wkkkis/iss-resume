@@ -1,4 +1,4 @@
-.form button{
+.formBtn button{
     padding: 20px 15px 20px 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -10,7 +10,13 @@
     transition: all 0.5s ease;
 }
 
-.form button:hover{
+.formBtn{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+.formBtn button:hover{
     box-shadow: 0 0 16px 8px #c8c8c8;
 }
 
@@ -54,7 +60,7 @@
 }
 
 .columns2 textarea{
-    height: 120px;
+    height: 126px;
 }
 
 .columns2 span:after{
@@ -101,11 +107,18 @@ select:-webkit-autofill:focus {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
     .formBlock{
         grid-template-columns: 100%;
     }
     .columns2{
         margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .formBtn{
+        grid-template-columns: 100%;
     }
 }

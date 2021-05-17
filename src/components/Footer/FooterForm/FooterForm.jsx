@@ -4,7 +4,11 @@ import s from "./FooterForm.module.css"
 
 function FooterForm(props) {
 
-    const {register, formState: {errors}, handleSubmit} = useForm();
+    const {register, formState: {errors}, handleSubmit, reset} = useForm();
+
+    const handleReset = () => {
+        reset({ GeneralInfo: { name: "", email: "", messages: "" } });
+      };
 
     return (
         <form className={s.form} onSubmit={handleSubmit(props.onSubmit)}>
@@ -28,8 +32,9 @@ function FooterForm(props) {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className={s.formBtn}>
                 <button type="submit">Отправить</button>
+                <button onClick={handleReset} type="reset">Очистить</button>
             </div>
         </form>
     );
