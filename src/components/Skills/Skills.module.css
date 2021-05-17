@@ -122,4 +122,10 @@
         display: grid;
         justify-content: center;
     }
+    .web{
+        margin: 0 auto;
+    }
+    .front{
+        margin: 0 auto;
+    }
 }

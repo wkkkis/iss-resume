@@ -100,13 +100,15 @@
         justify-content: center;
     }
 
-    .aboutCollage{
+    .spanCollage{
         margin-top: 15px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
     }
 
     .aboutCollage span{
-        display: flex;
-        justify-content: center;
+        font-size: 14px;
     }
 
     .aboutCollage span:after{

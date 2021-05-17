@@ -19,7 +19,9 @@ export default function Education(){
                     </div>
                 </div>
                 <div className={s.aboutCollage}>
-                    <span>Политехнический колледж МУКР</span>
+                    <div className={s.spanCollage}>
+                        <span>Политехнический колледж МУКР</span>
+                    </div>
                     <div className={s.paragraph}>
                         <p>
                             сентябь, 2020- июнь, 2023
