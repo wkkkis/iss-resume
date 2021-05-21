@@ -1,4 +1,4 @@
-.formBtn button{
+.formBtn button {
     padding: 20px 15px 20px 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -10,29 +10,29 @@
     transition: all 0.5s ease;
 }
 
-.formBtn{
+.formBtn {
     display: grid;
     justify-content: center;
     grid-template-columns: 50% 50%;
 }
 
-.formBtn button:hover{
+.formBtn button:hover {
     box-shadow: 0 0 16px 8px #c8c8c8;
 }
 
-.columns1{
+.columns1 {
     max-width: 100%;
 }
 
-.columns2{
+.columns2 {
     max-width: 100%;
 }
 
-.columns1 span:after{
+.columns1 span:after {
     content: none;
 }
 
-.form span{
+.form span {
     font-size: 13px;
     color: red;
     margin-left: 1%;
@@ -40,7 +40,7 @@
     margin-top: -20px;
 }
 
-.form textarea{
+.form textarea {
     max-width: 85%;
     width: 100%;
     border: 1px solid #e3e3e3;
@@ -50,34 +50,34 @@
     padding: 0 20px;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s ease;
-    outline:none;
+    outline: none;
     color: #252525;
     resize: none;
 }
 
-.form textarea:focus{
+.form textarea:focus {
     border: 1px solid #3333ff;
 }
 
-.columns2 textarea{
+.columns2 textarea {
     height: 126px;
 }
 
-.columns2 span:after{
+.columns2 span:after {
     content: none;
 }
 
-.formBlock{
+.formBlock {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.columns1{
+.columns1 {
     display: grid;
     grid-gap: 20px;
 }
 
-.form button{
+.form button {
     float: right;
     margin-right: 10px;
 }
@@ -98,27 +98,33 @@ select:-webkit-autofill:focus {
 
 
 @media screen and (max-width: 800px) {
-    .formBlock{
+    .formBlock {
         grid-template-columns: 100%;
     }
-    .columns2{
+
+    .columns2 {
         margin-top: 20px;
+    }
+
+    .formBtn button:hover {
+        box-shadow: none;
     }
 }
 
 
 @media screen and (max-width: 1050px) {
-    .formBlock{
+    .formBlock {
         grid-template-columns: 100%;
     }
-    .columns2{
+
+    .columns2 {
         margin-top: 20px;
     }
 }
 
 
 @media screen and (max-width: 320px) {
-    .formBtn{
+    .formBtn {
         grid-template-columns: 100%;
     }
 }

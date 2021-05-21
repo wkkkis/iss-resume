@@ -239,4 +239,7 @@
         margin-left: 20px;
         width: 30px;
     }
+    .buttons button:hover {
+        box-shadow: none;
+    }
 }

@@ -11,7 +11,7 @@ export default function Overlay({messagesCode, setCLoseCode}) {
                 <div className={s.stylesOverlay}>
                     <div className={s.stylesBlock}>
                         <span>{messagesCode}</span><br/>
-                        <button onClick={setCLoseCode}>
+                        <button onClick={() => setCLoseCode(null)}>
                             ок
                         </button>
                     </div>

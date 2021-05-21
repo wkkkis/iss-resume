@@ -1,19 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import s from "./Footer.module.css"
-import design from "../../assets/images/design.png";
-import facebook from "../../assets/images/facebook.png"
-import instagram from "../../assets/images/instagram.png"
-import telegram from "../../assets/images/telegram.png"
-import whatsapp from "../../assets/images/whatsapp.png"
-import github from "../../assets/images/github.png"
-import {compose} from "redux";
-import {connect} from "react-redux";
-import {getUserStatus, setCLoseCode} from "../../redux/messages-reducer";
 import FooterForm from "./FooterForm/FooterForm";
 import Overlay from "../common/Overlay";
+import {design, facebook, github, instagram, telegram, whatsapp} from "../../assets";
+import sendMessages from "../../api/api";
 
-function Footer({getUserStatus, messagesCode, setCLoseCode}) {
-    const onSubmit =data=> getUserStatus(JSON.stringify(data, null, 5))
+function Footer() {
+
+    const [messages, setMessages] = useState(null)
+
+    const onSubmit = data => sendMessages(JSON.stringify(data))
+        .then(response => {
+            if(response.ok){
+                setMessages("успешно отправлено")
+            }else{
+                setMessages("извините, сообщение не отправлено")
+            }
+    })
+
+    let setCLoseCode = () => {
+        setMessages(null)
+    }
+
     return (
         <>
             <div id="contact" className={s.mainFooter}>
@@ -64,18 +72,10 @@ function Footer({getUserStatus, messagesCode, setCLoseCode}) {
                 </span>
             </div>
             <div>
-                <Overlay messagesCode={messagesCode} setCLoseCode={setCLoseCode}/>
+                <Overlay messagesCode={messages} setCLoseCode={setCLoseCode}/>
             </div>
         </>
     )
 }
 
-let mapStateToProps = state => ({
-    messagesCode: state.messagesPage.messagesCode
-})
-
-let FooterContainer = compose(
-    connect(mapStateToProps, {setCLoseCode, getUserStatus})
-)(Footer)
-
-export default FooterContainer
+export default Footer

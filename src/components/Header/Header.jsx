@@ -9,6 +9,7 @@ export default function Header() {
     let activeAdaptiveMenu = () => {
         setState(true)
     }
+
     let closeAdaptiveMenu = () => {
         setState(false)
     }
