@@ -37,7 +37,6 @@
 
 .imgBlock {
     height: 320px;
-    background: #333333;
 }
 
 .imgBlock img {
@@ -45,9 +44,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: none;
 }
 
-.imgBlock span {
+.noProject{
+    width: 100%;
+    height: 100%;
+    background: #252525;
+}
+
+.noProject span {
     color: white;
     font-size: 40px;
     text-align: center;
@@ -64,10 +70,11 @@
 
 .aboutIs span {
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .aboutIs span:after {
-    content: none;
+    content: ".";
 }
 
 .paragraph {

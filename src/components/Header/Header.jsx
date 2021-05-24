@@ -22,15 +22,15 @@ export default function Header() {
                 </div>
                 <div className={s.mainMenu}>
                     <div className={state ? s.doAdaptive : s.menu}>
-                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="contact" spy={true}
+                        <Link onClick={closeAdaptiveMenu} offset={-65} to="contact" spy={true}
                               smooth={true}>СВЯЗАТЬСЯ</Link>
-                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="portfolio" spy={true}
+                        <Link onClick={closeAdaptiveMenu} offset={-65} to="portfolio" spy={true}
                               smooth={true}>ПОРТФОЛИО</Link>
-                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="education" spy={true}
+                        <Link onClick={closeAdaptiveMenu} offset={-65} to="education" spy={true}
                               smooth={true}>ОБРАЗОВАНИЕ</Link>
-                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="skills" spy={true}
+                        <Link onClick={closeAdaptiveMenu} offset={-65} to="skills" spy={true}
                               smooth={true}>НАВЫКИ</Link>
-                        <Link onClick={closeAdaptiveMenu} activeClass={s.active} offset={-65} to="about" spy={true}
+                        <Link onClick={closeAdaptiveMenu} offset={-65} to="about" spy={true}
                               smooth={true}>ОБО МНЕ</Link>
                     </div>
                     {!state ?

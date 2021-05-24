@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Portfolio.module.css";
 import {ProjectBlock} from "../index";
-import {project1} from "../../assets";
+import {project1, project2} from "../../assets";
 
 export default function Portfolio() {
 
@@ -11,14 +11,17 @@ export default function Portfolio() {
             image: project1,
             span: "Социальная сеть",
             paragraph: "React.js, Redux, REST API, Thunk, Styled Components, CSS modules, Axios",
-            link: "https://github.com/wkkkis/react-demo"
+            linkCode: "https://github.com/wkkkis/react-demo",
+            linkView: null,
+
         },
         {
             id: 2,
-            image: null,
-            span: null,
-            paragraph: null,
-            link: null
+            image: project2,
+            span: "Онлайн пиццерия",
+            paragraph: "React.js Redux, REST API, Thunk, Axios, SASS, Node.js",
+            linkCode: "https://github.com/wkkkis/react-pizza",
+            linkView: "https://react-pizza-iss.herokuapp.com/"
         },
         {
             id: 3,

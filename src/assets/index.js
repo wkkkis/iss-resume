@@ -9,3 +9,4 @@ export { default as github} from "./images/github.png";
 //project image
 
 export { default as project1} from "./project_image/iss_social_network.png";
+export { default as project2} from "./project_image/iss_react-pizza.png";
