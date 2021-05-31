@@ -39,7 +39,7 @@ export default function HeaderBurgerBar({menu, activeAdaptiveMenu, classFor}) {
                 <div style={{
                     position: 'fixed',
                     left: '50%',
-                    top: '30%',
+                    top: '230px',
                     transform: 'translate(-50%, -50%)'
                 }} className={s.mainLinkBlockActive}>
                     <Link onClick={() => activeAdaptiveMenu(false)} offset={-65} to="contact" spy={true}
