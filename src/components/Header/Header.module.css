@@ -26,7 +26,7 @@
 .miniMenuBar{
     max-width: 66%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     margin-left: 17%;
 }
 
