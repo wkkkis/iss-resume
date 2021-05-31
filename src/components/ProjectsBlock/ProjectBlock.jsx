@@ -1,13 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import s from "../Portfolio/Portfolio.module.css";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export default function ProjectBlock({image, span, paragraph, linkCode, linkView}) {
+
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    }, [])
 
     let gitHub = linkCode => document.location.href = linkCode
     let viewLink = linkView => document.location.href = linkView
 
     return (
-        <div className={s.project}>
+        <div data-aos="fade-up" className={s.project}>
             <div className={s.imgBlock}>
                 {image != null ?
                     <img src={image} alt=""/>

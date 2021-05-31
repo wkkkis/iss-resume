@@ -23,15 +23,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.fullName span {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.fullName span:after {
-    content: '.';
-    color: #3333ff;
-}
-
 .paragraph p {
     line-height: 1.6;
     color: #333;
@@ -78,11 +69,6 @@
     margin-top: 0;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: 49% 49%;
-    grid-gap: 2%;
-}
 
 .buttons button {
     cursor: pointer;
@@ -149,7 +135,7 @@
     }
 
     .photo {
-        margin-top: 10px;
+        display: none;
     }
 }
 
@@ -202,44 +188,53 @@
         width: 100%;
         display: grid;
     }
-
-    .photo {
-        margin-top: 10px;
-        float: left;
-    }
 }
 
 @media screen and (max-width: 400px) {
     .fullName span:after {
         content: none;
     }
+
     .fullName span {
         font-size: 20px;
     }
-    .paragraph p{
+
+    .paragraph p {
         text-align: center;
     }
-    .contacts{
+
+    .contacts {
         display: grid;
         justify-content: center;
     }
-    .phone span{
+
+    .phone span {
         text-align: center;
     }
-    .phone p{
+
+    .phone p {
         text-align: center;
     }
-    .social{
+
+    .social {
         margin-top: 10px;
         justify-content: center;
         display: flex;
         margin-left: -10%;
     }
-    .social img{
+
+    .social img {
         margin-left: 20px;
         width: 30px;
     }
+
     .buttons button:hover {
         box-shadow: none;
     }
+
+    .buttons {
+        display: grid;
+        justify-content: center;
+    }
+
 }

@@ -3,10 +3,11 @@ import design from "../../assets/images/design.png";
 import s from "./Eduction.module.css";
 
 export default function Education(){
+
     return(
         <div id="education" className={s.mainEducation}>
             <div className={s.education}>
-                <div className={s.educationAbout}>
+                <div data-aos="fade-right" className={s.educationAbout}>
                     <span>Образование</span>
                     <div className={s.paragraph}>
                         <p>
@@ -18,7 +19,7 @@ export default function Education(){
                         <img src={design} alt="" width="100px" />
                     </div>
                 </div>
-                <div className={s.aboutCollage}>
+                <div data-aos="fade-left" className={s.aboutCollage}>
                     <div className={s.spanCollage}>
                         <span>Политехнический колледж МУКР</span>
                     </div>

@@ -14,13 +14,13 @@ export default function AboutMe() {
             <div className={s.aboutMe}>
                 <div className={s.about}>
                     <div className={s.fullName}>
-                        <span>Я Исхак Ишмахаметов</span>
+                        <span>Привет, Я Исхак 👋</span>
                     </div>
                     <div className={s.paragraph}>
                         <p>
                             Я веб-разработчик из Кыргызстана, Бишкек.
                             В настоящее время я учусь на младшего веб-разработчика.
-                            Я хочу взять на себя больше работы и улучшить свои навыки веб-разработчика.
+                            Я хочу взять на себя больше работы и улучшить свои навыки.
                         </p>
                     </div>
                     <div className={s.contacts}>
@@ -54,19 +54,19 @@ export default function AboutMe() {
                                     </span>
                             <div className={s.social}>
                                 <a href="https://github.com/wkkkis">
-                                    <img className={s.github} src={github} alt=""/>
+                                    <img src={github} alt=""/>
                                 </a>
                                 <a href="https://www.facebook.com/profile.php?id=100026994910022">
-                                    <img className={s.facebook} src={facebook} alt=""/>
+                                    <img src={facebook} alt=""/>
                                 </a>
                                 <a href="https://www.instagram.com/layryc/">
-                                    <img className={s.instagram} src={instagram} alt=""/>
+                                    <img src={instagram} alt=""/>
                                 </a>
                                 <a href="https://t.me/hagelu">
-                                    <img className={s.telegram} src={telegram} alt=""/>
+                                    <img src={telegram} alt=""/>
                                 </a>
                                 <a href="https://wa.me/+996500100805">
-                                    <img className={s.whatsapp} src={whatsapp} alt=""/>
+                                    <img src={whatsapp} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -77,12 +77,6 @@ export default function AboutMe() {
                                 ПОСМОТРЕТЬ РЕЗЮМЕ
                             </button>
                         </a>
-                        <Link offset={-65} to="contact" spy={true} smooth={true}>
-                            <button>
-                                СВЯЗАТЬСЯ СО МНОЙ
-                            </button>
-                        </Link>
-
                     </div>
                 </div>
                 <div className={s.photo}>

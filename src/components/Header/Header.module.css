@@ -1,6 +1,5 @@
-.mainHeader{
+.mainHeader {
     padding: 25px;
-    background: white;
     border-bottom: 1px solid #e3e3e3;
     position: fixed;
     width: 100%;
@@ -8,7 +7,19 @@
     top: 0
 }
 
-.header{
+.mainActiveHeader {
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    top: 0;
+    border: none;
+    box-shadow: 0 2px 5px #838383;
+    backdrop-filter: blur(13px);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.header {
     width: 70%;
     display: grid;
     grid-template-columns: 30% 60%;
@@ -16,23 +27,23 @@
     grid-gap: 5%;
 }
 
-.logo span{
+.logo span {
     font-size: 24px;
     font-weight: 700;
     color: #252525;
     font-family: 'Montserrat', sans-serif;
 }
 
-.logo span:after{
+.logo span:after {
     content: '.';
     color: #3333ff;
 }
 
-.mainMenu{
+.mainMenu {
     margin-top: 5px;
 }
 
-.menu a{
+.menu a {
     float: right;
     text-decoration: none;
     margin-left: 5%;
@@ -42,134 +53,143 @@
     color: #252525;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: color 0.5s ease;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: #3333ff;
 }
 
-.burgerMenu{
+.menuBarBlock {
     display: none;
-    width: 25px;
-    float: right;
-    height: 25px;
-    margin-top: -1px;
 }
 
-.burgerMenu div{
-    padding: 1px;
-    height: 1px;
-    background: #252525;
-    margin-top: 5px;
+.menuDarkMode {
+    padding: 15px;
+    background: #e3e3e3;
+    border-radius: 0 0 10px 10px;
 }
 
-.doAdaptive{
-    position: fixed;
-    z-index: 5;
-    left: 0;
-    top: 80px;
-    width: 100%;
-    height: 100%;
-    background: #3333ff;
+.menuButton:hover {
+    box-shadow: 0 0 0 #e3e3e3;
 }
 
-.doAdaptive a{
-    cursor: pointer;
-    text-transform: none;
-    color: white;
-    font-size: 15px;
-    line-height: 5;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    justify-content: center;
-}
-
-.doAdaptive a{
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    justify-content: center;
-}
-
-.closeMenu {
-    width: 30px;
-    height: 40px;
-    border-radius: 40px;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    float: right;
-    top: -5px;
-    margin-top: -2px;
-}
-.closeMenu:before {
-    content: '+';
-    color: #252525;
-    position: absolute;
-    z-index: 2;
-    transform: rotate(45deg);
-    font-size: 50px;
-    line-height: 1;
-    top: -5px;
-    left: 5px;
-}
 
 @media screen and (max-width: 1200px) {
-    .header{
+    .header {
         width: 90%;
         grid-template-columns: 10% 80%;
     }
-    .menu .active{
+
+    .menu .active {
         color: #252525;
     }
 }
 
 @media screen and (max-width: 1015px) {
-    .header{
+    .header {
         width: 90%;
         grid-template-columns: 10% 80%;
     }
-    .menu .active{
+
+    .menu .active {
         color: #252525;
     }
 }
 
 @media screen and (max-width: 1225px) {
-    .header{
+    .header {
         width: 85%;
         margin-left: 7.5%;
     }
-    .menu .active{
+
+    .menu .active {
         color: #252525;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .menu{
+    .menu {
         display: none;
     }
-    .burgerMenu{
+
+    .burgerMenu {
         display: block;
+    }
+
+    .menuBarBlock {
+        display: block;
+        width: 99%;
+    }
+
+    .mainMenuBurgerBlock {
+        display: flex;
+        justify-content: center;
+        background: #3333ff;
+    }
+
+    .menuButton {
+        box-shadow: 0 4px 8px #e3e3e3;
+        top: -10px;
+        position: relative;
+        float: right;
+    }
+
+    .doAdaptive {
+        position: absolute;
+        background: #ffffff;
+        width: 300px;
+        display: grid;
+        padding-top: 10px;
+        top: 100px;
+        border-radius: 10px;
+        margin-top: 1%;
+        box-shadow: 0 3px 6px #252525;
+        transition: all 500ms;
+    }
+
+    .doAdaptive a {
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #252525;
+        border-bottom: 1px solid #e3e3e3;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .header{
+    .header {
         max-width: 90%;
         width: 100%;
         grid-template-columns: 50% 50%;
         margin-left: 0;
         grid-gap: 0;
     }
-    .mainMenu{
+
+    .mainMenu {
         margin-top: 0;
     }
-    .adaptive{
+
+    .adaptive {
         display: block;
         margin-top: 10%;
+    }
+
+    .menuBarBlock {
+        display: block;
+        width: 70%;
+    }
+
+    .menuButton {
+        box-shadow: 0 4px 8px #e3e3e3;
+        top: -5px;
+        position: relative;
+        float: right;
+    }
+
+    .doAdaptive {
+        margin-right: 50%;
     }
 }
