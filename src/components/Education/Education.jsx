@@ -7,7 +7,7 @@ export default function Education(){
     return(
         <div id="education" className={s.mainEducation}>
             <div className={s.education}>
-                <div data-aos="fade-right" className={s.educationAbout}>
+                <div className={s.educationAbout}>
                     <span>Образование</span>
                     <div className={s.paragraph}>
                         <p>
@@ -19,7 +19,7 @@ export default function Education(){
                         <img src={design} alt="" width="100px" />
                     </div>
                 </div>
-                <div data-aos="fade-left" className={s.aboutCollage}>
+                <div className={s.aboutCollage}>
                     <div className={s.spanCollage}>
                         <span>Политехнический колледж МУКР</span>
                     </div>

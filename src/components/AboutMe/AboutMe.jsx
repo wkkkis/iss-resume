@@ -6,7 +6,6 @@ import telegram from "../../assets/images/telegram.png"
 import whatsapp from "../../assets/images/whatsapp.png"
 import github from "../../assets/images/github.png"
 import cv from "../../assets/cv/cv.pdf"
-import {Link} from "react-scroll";
 
 export default function AboutMe() {
     return (

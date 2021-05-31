@@ -1,11 +1,15 @@
 .mainPortfolio {
-    padding: 40px;
+    max-width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #e3e3e3;
 }
 
 .portfolio {
-    width: 70%;
-    margin-left: 15%;
+    max-width: 66%;
+    margin-left: 17%;
+    display: grid;
+    justify-content: center;
 }
 
 .portfolio span {
@@ -22,10 +26,11 @@
 
 .allProject {
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .project {
@@ -112,21 +117,21 @@
     box-shadow: 0 0 16px 8px #c8c8c8;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
     .portfolio {
-        width: 90%;
-        margin-left: 5%;
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 840px) {
     .allProject {
         grid-template-columns: 100%;
         margin: 15px auto;
     }
 
     .project {
-        margin: 2% auto;
+        margin: 3% auto;
         width: 646px;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -135,9 +140,9 @@
 
 @media screen and (max-width: 800px) {
     .portfolio {
-        margin-top: 10px;
-        width: 100%;
-        margin-left: 0;
+        max-width: 90%;
+        grid-template-columns: 100%;
+        margin: 0 auto;
     }
 
     .portfolio span {
@@ -158,14 +163,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .mainPortfolio {
-        padding: 20px 0 60px 0;
-    }
-
-    .allProject {
-        margin-top: 10px;
-    }
-
     .btn button:hover {
         box-shadow: none;
     }

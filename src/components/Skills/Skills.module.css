@@ -1,14 +1,15 @@
 .mainSkills{
-    padding: 40px;
     border-bottom: 1px solid #e3e3e3;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
 }
 
 .skills{
-    width: 70%;
-    margin-left: 15%;
+    max-width: 66%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 10px;
+    margin-left: 17%;
 }
 
 .languagesSkills{
@@ -42,10 +43,6 @@
     margin-top: 40px;
 }
 
-.web{
-    width: 90%;
-}
-
 .web span{
     font-size: 17px;
     font-weight: 700;
@@ -56,10 +53,6 @@
 .web span:after{
     content: ".";
     color: #3333ff;
-}
-
-.front{
-    width: 90%;
 }
 
 .front span{
@@ -74,43 +67,43 @@
     color: #3333ff;
 }
 
-@media screen and (max-width: 1500px){
-    .skills{
-        width: 90%;
-        margin-left: 5%;
+@media screen and (max-width: 1300px){
+    .skills {
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 900px){
     .skills{
-        width: 100%;
-        margin-left: 0;
+        grid-template-columns: 100%;
+        margin: 0 auto;
     }
     .skillsAbout{
         width: 100%;
+    }
+
+    .languagesSkills{
+        margin-top: 30px;
+        display: grid;
+        grid-gap: 20px;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .skills{
-        width: 100%;
-        margin-left: 0;
+        max-width: 90%;
         grid-template-columns: 100%;
+        margin: 0 auto;
     }
     .languagesSkills{
-        margin-top: 15px;
+        margin-top: 30px;
         grid-gap: 15px;
-    }
-    .languagesSkills span{
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
     .skillsAbout{
         width: 100%;
-    }
-    .skillsAbout span{
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
     .design{
         display: grid;
@@ -121,11 +114,5 @@
         margin-top: 5px;
         display: grid;
         justify-content: center;
-    }
-    .web{
-        margin: 0 auto;
-    }
-    .front{
-        margin: 0 auto;
     }
 }

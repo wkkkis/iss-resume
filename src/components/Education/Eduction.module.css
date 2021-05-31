@@ -1,14 +1,15 @@
 .mainEducation {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #e3e3e3;
+    width: 100%;
 }
 
 .education {
-    width: 70%;
-    margin-left: 15%;
+    max-width: 66%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 10px;
+    margin-left: 17%;
 }
 
 .educationAbout span {
@@ -49,43 +50,45 @@
     margin-top: 40px;
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1300px){
     .education{
-        width: 90%;
-        margin-left: 5%;
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 900px) {
     .education {
-        width: 100%;
-        margin-left: 0;
+        grid-template-columns: 100%;
+        margin: 0 auto;
     }
 
     .educationAbout {
         width: 100%;
+    }
+
+    .aboutCollage{
+        margin-top: 30px;
+    }
+    .aboutCollage span{
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .education {
-        width: 100%;
-        margin-left: 0;
+        max-width: 90%;
         grid-template-columns: 100%;
+        margin: 0 auto;
     }
 
-    .languagesSkills span {
-        display: flex;
-        justify-content: center;
+    .languagesSkills{
+        text-align: center;
     }
 
     .educationAbout {
+        text-align: center;
         width: 100%;
-    }
-
-    .educationAbout span {
-        display: flex;
-        justify-content: center;
     }
 
     .design {
@@ -93,25 +96,12 @@
         justify-content: center;
     }
 
-    .paragraph p{
+    .paragraph{
         margin-top: 5px;
         text-align: center;
-        display: grid;
-        justify-content: center;
     }
 
     .spanCollage{
-        margin-top: 15px;
-        display: grid;
-        justify-content: center;
         text-align: center;
-    }
-
-    .aboutCollage span{
-        font-size: 14px;
-    }
-
-    .aboutCollage span:after{
-        content: none;
     }
 }
