@@ -7,8 +7,7 @@ export default function ProjectBlock({image, span, paragraph, linkCode, linkView
     let viewLink = linkView => document.location.href = linkView
 
     return (
-        <div data-aos="fade-up"
-             data-aos-duration="3000" className={s.project}>
+        <div className={s.project}>
             <div className={s.imgBlock}>
                 {image != null ?
                     <img src={image} alt=""/>
