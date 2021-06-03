@@ -1,5 +1,8 @@
 import React from "react";
+import Typical from 'react-typical'
+
 import s from "./AboutMe.module.css"
+
 import facebook from "../../assets/images/facebook.png"
 import instagram from "../../assets/images/instagram.png"
 import telegram from "../../assets/images/telegram.png"
@@ -13,7 +16,13 @@ export default function AboutMe() {
             <div className={s.aboutMe}>
                 <div className={s.about}>
                     <div className={s.fullName}>
-                        <span>Привет, Я Исхак 👋</span>
+                        <span>Привет,<br/>{" "}
+                            <Typical
+                            steps={['Я Исхак 👋', 1000, 'Я Исхак Ишмахаметов', 1000]}
+                            loop={Infinity}
+                            wrapper="p"
+                        />
+                        </span>
                     </div>
                     <div className={s.paragraph}>
                         <p>
